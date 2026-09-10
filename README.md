@@ -11,7 +11,7 @@ The `LICENSE` clearly indicates that this repo is not allowing any copy or forki
 
 ### If you are a new joined developer
 
-See [DEVELOPERS.md](https://github.com/jimmyqrg/perfectnip.github.io/blob/main/DEVELOPERS.md)
+See [DEVELOPERS.md](https://github.com/indiamonda/perfectnip.github.io/blob/main/DEVELOPERS.md)
 
 ### Test site
 

@@ -2,7 +2,7 @@
 
 ## Cloud Saves & Sign-in (`js/jqrg-cloud.js` + `js/jqrg-auth-ui.js`)
 
-All same-origin pages on `perfectnip.github.io` are auth-gated and sync game progress to the chat backend (`chat.jimmyqrg.com`). Each HTML file pulls in two scripts via the shared inject marker:
+All same-origin pages on `perfectnip.github.io` are auth-gated and sync game progress to the chat backend (`discord.jimmyqrg.com`). Each HTML file pulls in two scripts via the shared inject marker:
 
 ```html
 <!-- JQRG_CLOUD_INJECT_BEGIN -->
@@ -40,7 +40,7 @@ JqrgCloud.skipKey('prefix_') / skipKeys(['a_','b_']) // opt keys out of sync
 
 ### Server-side
 
-The backend lives in the separate repo `chat/` (deployed at `https://chat.jimmyqrg.com`). It exposes the user/saves APIs used by the client:
+The backend lives in the separate repo `chat/` (deployed at `https://discord.jimmyqrg.com`). It exposes the user/saves APIs used by the client:
 
 - `POST /api/auth/register` / `POST /api/auth/login` – returns a bearer token when called from an off-origin client.
 - `GET /api/auth/me` – current session user.
@@ -112,7 +112,7 @@ All site scripts live in `js/`. They split into two groups:
 | `cursor.js` | Custom cursor renderer + 20-frame animated cursor cycle. Reads `localStorage` to enable/disable and pick assets from the `/cursor/` folder. |
 | `educational-context.js` | Injects Schema.org `EducationalOrganization` JSON-LD plus dummy "digital literacy curriculum" metadata. It's an AI / content-filter decoy — it does not change behavior, only what scrapers see. |
 | `jqrg-auth-ui.js` | Top-bar account button, sign-in / sign-up / account modal, and the `ensureTopBarButton()` placement logic. Loaded everywhere via the cloud-inject markers. |
-| `jqrg-cloud.js` | The `JqrgCloud` global. Hijacks `localStorage` to sync writes to `chat.jimmyqrg.com`, snapshots IndexedDB for Unity / Construct games, and exposes `forceSync` / `exportAll` / `importAll` / `deleteAll`. See the **Cloud Saves & Sign-in** section above. |
+| `jqrg-cloud.js` | The `JqrgCloud` global. Hijacks `localStorage` to sync writes to `discord.jimmyqrg.com`, snapshots IndexedDB for Unity / Construct games, and exposes `forceSync` / `exportAll` / `importAll` / `deleteAll`. See the **Cloud Saves & Sign-in** section above. |
 | `jqrg-loader-lines.js` | Auto-generated array of loading-screen tip / fact lines exposed as `window.__JqrgLoaderLines`. Regenerated from `py/lines.py`; the same payload is also inlined into every game HTML by `migrate-loader-tip-lines-inline.mjs` so the lines paint immediately. |
 | `jqrg-particles.js` | Homepage background particle system. Five styles (`constellation`, `nebula`, `aurora`, `quantum`, `crystal`, plus `none`) and four quality tiers. Public API: `window.JqrgParticles.{setStyle, setQuality, getStyle, getQuality, refresh, STYLES, QUALITIES, …}`. Settings persist in `localStorage`. |
 | `mainPageCloak.js` | Disguises the **non-game** pages' tab title + favicon (default: `Inbox - Gmail`). Reads `mainPageCloak`, `mainCloakTitle`, `mainCloakIcon` from `localStorage`; rewrites `*.png` cloak paths to the matching `cloak-images/favicon/*.ico`. Skips any URL under `/q/g/`. |

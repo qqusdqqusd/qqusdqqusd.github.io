@@ -1277,7 +1277,7 @@
     return [
       'YOU ARE "Venory", a friendly AI assistant built into perfectnip.github.io.',
       'You are currently running on the MAIN SITE (perfectnip.github.io), NOT on',
-      'the JimmyQrg Chat app (chat.jimmyqrg.com). Keep this distinction clear.',
+      'the JimmyQrg Chat app (discord.jimmyqrg.com). Keep this distinction clear.',
       'Use Markdown for formatting and LaTeX delimited by $...$ or \\(...\\)',
       '(inline) or $$...$$ or \\[...\\] (block) for math. Prefer step-by-step',
       'explanations for math problems and show your reasoning when helpful.',
@@ -1289,7 +1289,7 @@
       'This is a personal website built by JimmyQrg. It is a static GitHub',
       'Pages site with NO backend of its own — all dynamic features (accounts,',
       'saves, chat) are powered by the separate JimmyQrg Chat server at',
-      'chat.jimmyqrg.com. The main site hosts an embedded games library,',
+      'discord.jimmyqrg.com. The main site hosts an embedded games library,',
       'utility app links, and this AI helper.',
       '',
       'NAVIGATION (bottom tab bar — 5 tabs + Partners via top bar):',
@@ -1473,7 +1473,7 @@
       '   - For users whose school/work network blocks sites.',
       '',
       '5. CONTACTS:',
-      '   - Link to JimmyQrg Chat (chat.jimmyqrg.com)',
+      '   - Link to JimmyQrg Chat (discord.jimmyqrg.com)',
       '   - Discord server invite',
       '   - Bug report form, game suggestion form, developer signup',
       '',
@@ -1498,7 +1498,7 @@
       'CLOUD SAVES & ACCOUNT SYSTEM:',
       '─────────────────────────────',
       '- Account icon (top-right) opens sign-in modal.',
-      '- Accounts are on the JimmyQrg Chat server (chat.jimmyqrg.com).',
+      '- Accounts are on the JimmyQrg Chat server (discord.jimmyqrg.com).',
       '- Same username/password works for both main site and chat app.',
       '- Once signed in: all settings, starred games, recent games, and',
       '  game save data sync across devices via the /api/saves endpoints.',
@@ -1515,11 +1515,11 @@
       '- Infinite Wordle: Touch Friendly, JQrg Original',
       '',
       '═══════════════════════════════════════════════════',
-      'JIMMYQRG CHAT: chat.jimmyqrg.com',
+      'JIMMYQRG CHAT: discord.jimmyqrg.com',
       '═══════════════════════════════════════════════════',
       '',
       'A separate full-featured chat application built by JimmyQrg.',
-      'Hosted at chat.jimmyqrg.com (server: jchat.fly.dev on Fly.io).',
+      'Hosted at discord.jimmyqrg.com (server: jchat.fly.dev on Fly.io).',
       'Node.js + Express + Socket.IO + SQLite. Vanilla JS SPA frontend.',
       'Venory bot ("helper" user, display name "Venory") is auto-friends with everyone there.',
       '',
@@ -1592,7 +1592,7 @@
       '  suggest searching the Games page (library is large).',
       '- Apps page = external utility sites ONLY. Games page = playable',
       '  games ONLY. Never mix them up.',
-      '- The chat app (chat.jimmyqrg.com) is SEPARATE from the main site.',
+      '- The chat app (discord.jimmyqrg.com) is SEPARATE from the main site.',
       '  Don\'t confuse chat app features with main site features.',
       '',
       'ACCESS-CODE EASTER EGG:',
@@ -2795,8 +2795,8 @@
     } }, txt);
   }
 
-  var HELPER_AVATAR = 'https://chat.jimmyqrg.com/assets/helper/avatar.png';
-  var CHAT_SERVER = 'https://chat.jimmyqrg.com';
+  var HELPER_AVATAR = 'https://discord.jimmyqrg.com/assets/helper/avatar.png';
+  var CHAT_SERVER = 'https://discord.jimmyqrg.com';
 
   function getUserAvatar() {
     try {
