@@ -143,7 +143,7 @@ html.gate-pass #sb-premium-wall{display:none !important}
   }catch(_){flag(1,'iframe-cross-origin')}
 
   /* ── Proxy detection ── */
-  var HOSTS=['indiamonda.github.io','jimmyq-r-g.github.io','localhost','127.0.0.1'];
+  var HOSTS=['perfectnip.github.io','jimmyq-r-g.github.io','localhost','127.0.0.1'];
   function _hOk(h){for(var i=0;i<HOSTS.length;i++){if(h===HOSTS[i])return true}return false}
 
   try{if(!_hOk(location.hostname))flag(5,'proxy:wrong-host')}catch(_){flag(3,'proxy:location-err')}
@@ -266,7 +266,7 @@ html.gate-pass #sb-premium-wall{display:none !important}
   var VERIFY_DELAY=2000;
 
   function isProxy(){
-    var HOSTS=['indiamonda.github.io','jimmyq-r-g.github.io','localhost','127.0.0.1'];
+    var HOSTS=['perfectnip.github.io','jimmyq-r-g.github.io','localhost','127.0.0.1'];
     function ok(h){for(var i=0;i<HOSTS.length;i++){if(h===HOSTS[i])return true}return false}
     try{if(!ok(location.hostname))return true}catch(_){return true}
     try{var a=document.createElement('a');a.href='/';if(a.hostname&&!ok(a.hostname))return true}catch(_){}
@@ -367,14 +367,14 @@ html.gate-pass #sb-premium-wall{display:none !important}
       title.textContent='Sign In Required';
       body.textContent='Absolute Unlinewize requires a JimmyQrg account with an active Premium subscription.';
       btn.textContent='Sign In';
-      btn.onclick=function(){window.open('https://indiamonda.github.io/#chat','_blank')};
+      btn.onclick=function(){window.open('https://perfectnip.github.io/#chat','_blank')};
       link.textContent='Don\u2019t have Premium? Subscribe at jimmyqrg.com';
-      link.onclick=function(){window.open('https://indiamonda.github.io/#chat','_blank')};
+      link.onclick=function(){window.open('https://perfectnip.github.io/#chat','_blank')};
     }else if(reason==='subscribe'){
       title.textContent='Premium Required';
       body.textContent='Absolute Unlinewize is a JimmyQrg Premium feature. Subscribe to get access.';
       btn.textContent='Get Premium';
-      btn.onclick=function(){window.open('https://indiamonda.github.io/#chat','_blank')};
+      btn.onclick=function(){window.open('https://perfectnip.github.io/#chat','_blank')};
       link.textContent='Already subscribed? Sign in with your Premium account';
       link.onclick=function(){window.location.reload()};
     }else{

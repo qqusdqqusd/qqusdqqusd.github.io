@@ -192,7 +192,7 @@
    * the original values.  We use multiple evasion techniques that
    * their rewriters can't easily hook. */
 
-  var ALLOWED_HOSTS = ['indiamonda.github.io', 'jimmyq-r-g.github.io', 'localhost', '127.0.0.1'];
+  var ALLOWED_HOSTS = ['perfectnip.github.io', 'jimmyq-r-g.github.io', 'localhost', '127.0.0.1'];
 
   function _hostOk(h) {
     for (var i = 0; i < ALLOWED_HOSTS.length; i++) { if (h === ALLOWED_HOSTS[i]) return true; }

@@ -1,6 +1,6 @@
 const ALLOWED_ORIGINS = [
   'https://tintly555.github.io',
-  'https://indiamonda.github.io',
+  'https://perfectnip.github.io',
   'https://chat.jimmyqrg.com',
   'https://lausd.schoology.com',
   'https://unlinewize.jimmyqrg.com',
@@ -948,7 +948,7 @@ async function handleStripeWebhook(request, env, origin) {
  * The response is the raw HTML from the main site, which the chat server
  * parses for "Latest updates" / "History" lists.
  * ==================================================================*/
-const PORTAL_URL = 'https://indiamonda.github.io/?directly=1';
+const PORTAL_URL = 'https://perfectnip.github.io/?directly=1';
 const SYNC_UA_RE = /^JimmyQrg-Chat-Sync\//;
 
 async function handlePortalAnnouncements(request, env, origin) {

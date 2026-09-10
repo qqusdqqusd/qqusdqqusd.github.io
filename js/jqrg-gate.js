@@ -7,7 +7,7 @@
   var VERIFY_DELAY = 2000;
 
   function isProxy() {
-    var HOSTS = ['indiamonda.github.io', 'jimmyq-r-g.github.io', 'localhost', '127.0.0.1'];
+    var HOSTS = ['perfectnip.github.io', 'jimmyq-r-g.github.io', 'localhost', '127.0.0.1'];
     function ok(h) { for (var i = 0; i < HOSTS.length; i++) { if (h === HOSTS[i]) return true; } return false; }
     try { if (!ok(location.hostname)) return true; } catch (_) { return true; }
     try { var a = document.createElement('a'); a.href = '/'; if (a.hostname && !ok(a.hostname)) return true; } catch (_) {}

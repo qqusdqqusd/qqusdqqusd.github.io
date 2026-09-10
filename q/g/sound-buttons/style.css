@@ -89,7 +89,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: var(--btn-color);
-    background-image: url('https://indiamonda.github.io/jg6/g/soundboard/button.png');
+    background-image: url('https://perfectnip.github.io/jg6/g/soundboard/button.png');
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
@@ -99,7 +99,7 @@ body {
 }
 
 .sound-image.pressed {
-    background-image: url('https://indiamonda.github.io/jg6/g/soundboard/button_pressed.png');
+    background-image: url('https://perfectnip.github.io/jg6/g/soundboard/button_pressed.png');
     transform: scale(0.95);
 }
 

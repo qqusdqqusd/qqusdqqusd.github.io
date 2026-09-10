@@ -2,7 +2,7 @@
 
 ## Cloud Saves & Sign-in (`js/jqrg-cloud.js` + `js/jqrg-auth-ui.js`)
 
-All same-origin pages on `indiamonda.github.io` are auth-gated and sync game progress to the chat backend (`chat.jimmyqrg.com`). Each HTML file pulls in two scripts via the shared inject marker:
+All same-origin pages on `perfectnip.github.io` are auth-gated and sync game progress to the chat backend (`chat.jimmyqrg.com`). Each HTML file pulls in two scripts via the shared inject marker:
 
 ```html
 <!-- JQRG_CLOUD_INJECT_BEGIN -->
@@ -50,7 +50,7 @@ The backend lives in the separate repo `chat/` (deployed at `https://chat.jimmyq
 - `GET /api/saves/stats?origin=jimmyqrg` – key / byte counts.
 - `POST /api/auth/sso` / `GET /api/auth/sso?sso=TOKEN` – exchange a token for a cookie session (used when opening chat from the main site).
 
-CORS, cookies and CSP `frame-ancestors` are configured for `indiamonda.github.io` and the local dev origins. Account data, tokens and saves are all stored on the same SQLite DB as chat, so existing accounts are preserved.
+CORS, cookies and CSP `frame-ancestors` are configured for `perfectnip.github.io` and the local dev origins. Account data, tokens and saves are all stored on the same SQLite DB as chat, so existing accounts are preserved.
 
 ### Local development
 

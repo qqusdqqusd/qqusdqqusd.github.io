@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-A static **GitHub Pages** site (`indiamonda.github.io`, also reachable via `jimmyq-r-g.github.io`). One giant `index.html` hub links out to games, tools, unblockers, an in-page AI chat, and a GoGuardian-detection cloak. There is **no build step** — anything that runs in the browser ships as-is.
+A static **GitHub Pages** site (`perfectnip.github.io`, also reachable via `jimmyq-r-g.github.io`). One giant `index.html` hub links out to games, tools, unblockers, an in-page AI chat, and a GoGuardian-detection cloak. There is **no build step** — anything that runs in the browser ships as-is.
 
 - **Owner:** `@jimmyqrg` (site owner — bypasses premium / unlimited features across all linked repos).
 - **Production deploy:** branch `gh-pages`. **Commit only to `main`**; the owner pulls to `gh-pages` after verifying.
@@ -44,7 +44,7 @@ js/                   ← runtime browser scripts AND one-shot build/migration .
   *.mjs               ← Node-only build/migration scripts (inject-cloud, migrate-loader-*,
                         audit-loader, strip-ads, fix-loader-newline, update-inject)
 
-cloudflare-worker/    ← DeepSeek proxy. Allowed origins: indiamonda.github.io, jchat.fly.dev,
+cloudflare-worker/    ← DeepSeek proxy. Allowed origins: perfectnip.github.io, jchat.fly.dev,
                         unlinewize.jimmyqrg.com, etc. See worker.js → ALLOWED_ORIGINS.
 
 schoology-overlay.html ← 5.3MB fullscreen cloak shown when GoGuardian is detected
