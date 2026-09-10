@@ -166,7 +166,7 @@ the worker doesn't pay OCR / model costs for non-paying users. Setup:
 The frontend reads the bearer token from the existing `__jqrg_auth_v1`
 localStorage entry (set by `jqrg-cloud.js` after sign-in) and forwards it
 to the worker as `Authorization: Bearer <token>`. The worker exchanges
-that token with the chat server (`https://chat.jimmyqrg.com/api/auth/me`)
+that token with the chat server (`https://discord.jimmyqrg.com/api/auth/me`)
 once per request to resolve the user id, then stores subscription rows in
 KV under `sub:<user_id>`. Anonymous (signed-out) visitors are blocked at
 the frontend with a "sign in to subscribe" prompt.

@@ -8,7 +8,7 @@ A static **GitHub Pages** site (`perfectnip.github.io`, also reachable via `jimm
 
 - **Owner:** `@jimmyqrg` (site owner — bypasses premium / unlimited features across all linked repos).
 - **Production deploy:** branch `gh-pages`. **Commit only to `main`**; the owner pulls to `gh-pages` after verifying.
-- **Backend for auth + cloud saves:** the separate `chat/` repo, deployed at `https://chat.jimmyqrg.com`.
+- **Backend for auth + cloud saves:** the separate `chat/` repo, deployed at `https://discord.jimmyqrg.com`.
 - **AI chat proxy:** `cloudflare-worker/` (DeepSeek).
 - **Sister repos mentioned by DEVELOPERS.md:** `chat/`, `../u/` (absolute unlinewize), `../q/`-style games live in a sibling `jg/g/` repo.
 
@@ -27,7 +27,7 @@ q/                    ← games hosted on this repo (each game is a folder with 
 q/e/, q/u/            ← other features routed off the hub
 
 js/                   ← runtime browser scripts AND one-shot build/migration .mjs scripts
-  jqrg-cloud.js       ← localStorage hijacker; syncs every write to chat.jimmyqrg.com
+  jqrg-cloud.js       ← localStorage hijacker; syncs every write to discord.jimmyqrg.com
   jqrg-auth-ui.js     ← top-bar account button + sign-in/sign-up modal
   jqrg-gate.js        ← proxy detection; blocks the site if loaded through Ultraviolet/Scramjet/etc.
   jqrg-content-gate.js← reads auth state from localStorage; sets data-authed + __jqrgIsAuthed

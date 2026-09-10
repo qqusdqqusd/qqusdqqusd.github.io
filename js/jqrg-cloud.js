@@ -1,5 +1,5 @@
 /* jqrg-cloud.js
- * Client for chat.jimmyqrg.com auth + per-user save sync. Dropped into every same-origin page on
+ * Client for discord.jimmyqrg.com auth + per-user save sync. Dropped into every same-origin page on
  * perfectnip.github.io so games inherit cloud saves automatically. The file is idempotent and
  * safe to include multiple times.
  *
@@ -34,7 +34,7 @@
       var meta = document.querySelector && document.querySelector('meta[name="jqrg-cloud-server"]');
       if (meta && meta.content) return meta.content.replace(/\/+$/, '');
     } catch (_) {}
-    return 'https://chat.jimmyqrg.com';
+    return 'https://discord.jimmyqrg.com';
   })();
   // Server-side bucket identifier. External JimmyQrg apps (e.g. mcraft.fly.dev) override this so
   // their saves don't collide with key names used on the main site. Same user account, different

@@ -1,7 +1,7 @@
 const ALLOWED_ORIGINS = [
   'https://tintly555.github.io',
   'https://perfectnip.github.io',
-  'https://chat.jimmyqrg.com',
+  'https://discord.jimmyqrg.com',
   'https://lausd.schoology.com',
   'https://unlinewize.jimmyqrg.com',
   'https://ulw-app.fly.dev',
@@ -27,7 +27,7 @@ const DEEPSEEK_URL = 'https://api.deepseek.com/chat/completions';
 /* The chat server hosts the user account database; we exchange the user's
  * bearer token for their canonical user id here. Same backend that
  * jqrg-cloud.js uses, so token format / lifetime are guaranteed to match. */
-const AUTH_SERVER = 'https://chat.jimmyqrg.com';
+const AUTH_SERVER = 'https://discord.jimmyqrg.com';
 
 /* Models we accept. Anything else is rejected with 400 so the caller can't
  * accidentally route to a more expensive model. */
@@ -126,7 +126,7 @@ function getBearer(request) {
   return m ? m[1].trim() : null;
 }
 
-/* Resolve a bearer token to a user record by hitting chat.jimmyqrg.com.
+/* Resolve a bearer token to a user record by hitting discord.jimmyqrg.com.
  * Returns `{ id, username, email? }` on success, null on any failure
  * (expired token, server down, etc.). We deliberately don't cache the
  * response: tokens can be revoked at any time and a 100ms round-trip is

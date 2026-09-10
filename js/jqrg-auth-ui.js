@@ -349,7 +349,7 @@
 
   /** Resolve the avatar URL for a user object, mirroring jchat's resolution.
    *  - Uploaded avatars are stored as relative `/uploads/...` paths on the chat
-   *    server, so prefix them with `Cloud.SERVER` (e.g. https://chat.jimmyqrg.com).
+   *    server, so prefix them with `Cloud.SERVER` (e.g. https://discord.jimmyqrg.com).
    *  - Absolute URLs and `data:` URIs are returned untouched.
    *  - Falls back to the deterministic colored silhouette if no avatar is set. */
   function avatarUrlFor(user) {
