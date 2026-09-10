@@ -3545,11 +3545,11 @@ var PROXY_BASE='https://ulw-app.fly.dev/launcher.html?raw=true&url=';
 var PROXY_ORIGIN='https://ulw-app.fly.dev';
 var PROXY_WORKER='https://deepseek-proxy.ikunbeautiful.workers.dev';
 function proxyUrl(url,raw){
-  var proxiedUrl=url.replace('jimmyqrg.github.io','indiamonda.github.io');
+  var proxiedUrl=url.replace('jimmyqrg.github.io','perfectnip.github.io');
   return PROXY_BASE+encodeURIComponent(proxiedUrl);
 }
 function proxyUrlWithSession(sid,url,raw){
-  var proxiedUrl=url.replace('jimmyqrg.github.io','indiamonda.github.io');
+  var proxiedUrl=url.replace('jimmyqrg.github.io','perfectnip.github.io');
   return PROXY_BASE+encodeURIComponent(proxiedUrl);
 }
 function requestProxySession(targetUrl){
@@ -4574,7 +4574,7 @@ function buildIconGrid(currentVal,storageKey,gridId){
   var html='';
   for(var i=0;i<CLOAK_ICONS.length;i++){
     var ic=CLOAK_ICONS[i];
-    var isActive=(currentVal===ic.src||currentVal==='https://indiamonda.github.io'+ic.src);
+    var isActive=(currentVal===ic.src||currentVal==='https://perfectnip.github.io'+ic.src);
     html+='<img class="cloak-icon-opt'+(isActive?' active':'')+'" src="'+ic.src+'" title="'+ic.name+'" draggable="false" onclick="selectCloakIcon(this,\''+storageKey+'\',\''+gridId+'\',\''+ic.src+'\')">';
   }
   html+='<div class="cloak-upload-zone" onclick="this.querySelector(\'input\').click()">Custom Icon<input type="file" accept="image/*" style="display:none" onchange="uploadCloakIcon(this,\''+storageKey+'\',\''+gridId+'\')"></div>';
@@ -5566,12 +5566,12 @@ function _lP(url,sourcePage){
   function tryUlw(){
     if(_lPRetried) return;
     _lPRetried=true;
-    var pu=absUrl.replace('jimmyqrg.github.io','indiamonda.github.io');
+    var pu=absUrl.replace('jimmyqrg.github.io','perfectnip.github.io');
     doProxy('https://ulw-app.fly.dev/launcher.html?raw=true&url='+encodeURIComponent(pu));
   }
 
   function tryAbs(){
-    var pu=absUrl.replace('jimmyqrg.github.io','indiamonda.github.io');
+    var pu=absUrl.replace('jimmyqrg.github.io','perfectnip.github.io');
     doProxy('https://ulw-app.fly.dev/?raw=true&url='+encodeURIComponent(pu));
   }
 

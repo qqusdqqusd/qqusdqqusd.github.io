@@ -4,14 +4,14 @@
 
 A web application with various features and tools.
 
-[OPEN](https://indiamonda.github.io)
+[OPEN](https://perfectnip.github.io)
 
 ### NOTE
 The `LICENSE` clearly indicates that this repo is not allowing any copy or forking, so please do not fork this repo.
 
 ### If you are a new joined developer
 
-See [DEVELOPERS.md](https://github.com/jimmyqrg/indiamonda.github.io/blob/main/DEVELOPERS.md)
+See [DEVELOPERS.md](https://github.com/jimmyqrg/perfectnip.github.io/blob/main/DEVELOPERS.md)
 
 ### Test site
 

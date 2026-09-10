@@ -1,6 +1,6 @@
 /* jqrg-cloud.js
  * Client for chat.jimmyqrg.com auth + per-user save sync. Dropped into every same-origin page on
- * indiamonda.github.io so games inherit cloud saves automatically. The file is idempotent and
+ * perfectnip.github.io so games inherit cloud saves automatically. The file is idempotent and
  * safe to include multiple times.
  *
  * It exposes `window.JqrgCloud` with:
